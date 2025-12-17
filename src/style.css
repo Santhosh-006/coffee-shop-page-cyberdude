@@ -9,3 +9,13 @@
   --color-default: #5d4037;
   --color-light: #d7ccc8;
 }
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
