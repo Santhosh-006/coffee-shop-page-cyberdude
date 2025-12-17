@@ -19,3 +19,72 @@
     transform: translateX(-50%);
   }
 }
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.scroll-fadeup {
+  animation-name: fade-up;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes rightIn {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.rightin {
+  animation: rightIn 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.rightIn {
+  animation: rightIn 1s ease-out forwards;
+  animation-timeline: scroll();
+  animation-delay: 0.2s;
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes leftIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.leftin {
+  animation: leftIn 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.leftIn {
+  animation: leftIn 1s ease-out forwards;
+  animation-timeline: scroll();
+  animation-delay: 0.2s;
+  animation-range: entry 0% cover 40%;
+}
