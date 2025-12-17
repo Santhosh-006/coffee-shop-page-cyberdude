@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="/coffee-shop-page-cyberdude/assets/favicon-DLEOO20J.svg" />
+
     <!-- Stylesheet -->
 
 
     <title>Coffeeo | Coffee-Shop</title>
-    <link rel="stylesheet" crossorigin href="/coffee-shop-page-cyberdude/assets/index-B2t3WhUv.css">
+    <link rel="stylesheet" crossorigin href="/coffee-shop-page-cyberdude/assets/index-DtN_2J9W.css">
   </head>
   <body class="bg-stone-50 text-stone-800 font-outfit">
     <header
-      class="fixed top-0 w-full z-50 backdrop-blur-sm bg-transparent border-b border-stone-500/30"
+      class="md:fixed top-0 w-full z-50 backdrop-blur-sm bg-transparent border-b border-stone-500/30"
     >
       <nav
         class="max-w-7xl mx-auto px-3 py-5 flex justify-between items-center"
@@ -23,7 +26,7 @@
           ></span>
           <a href="" class="font-playfair text-2xl font-semibold">Coffeeo</a>
         </div>
-        <div>
+        <div class="md:block hidden">
           <ul class="flex gap-9 items-center">
             <li>Home</li>
             <li>About Us</li>
@@ -42,7 +45,7 @@
     <main class="">
       <!-- Hero Section -->
       <section
-        class="min-h-screen flex items-center justify-center gap-6 max-w-7xl mx-auto"
+        class="min-h-screen flex flex-col-reverse md:flex-row md:mt-0 md:p-2 p-5 mt-16 items-center justify-center md:gap-6 gap-10 max-w-7xl mx-auto"
       >
         <div class="space-y-9">
           <div class="bg-amber-200 px-2 py-1 rounded w-fit">
@@ -74,14 +77,14 @@
           </div>
         </div>
 
-        <div class="relative">
+        <div class="relative md:p-0 p-7">
           <div
-            class="bg-amber-100 h-131.25 rounded-4xl absolute inset-0 -rotate-6"
+            class="bg-amber-100 h-96 md:h-131.25 rounded-4xl absolute inset-0 -rotate-6"
           ></div>
           <img
             src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
             alt=""
-            class="relative w-full object-cover h-125 rounded-2xl"
+            class="relative w-full object-cover h-96 md:h-125 rounded-2xl"
           />
         </div>
         <div>
@@ -98,7 +101,9 @@
             </p>
             <div class="w-24 h-1 mx-auto bg-amber-400 rounded"></div>
           </div>
-          <div class="mt-10 grid md:grid-cols-4 md:grid-rows-2 gap-4">
+          <div
+            class="mt-10 grid md:grid-cols-4 md:grid-rows-2 grid-cols-2 grid-rows-1 gap-4 md:px-0 px-5"
+          >
             <div class="col-span-2 row-span-2 relative">
               <img
                 src="https://images.pexels.com/photos/606545/pexels-photo-606545.jpeg"
@@ -172,7 +177,7 @@
         <p class="text-4xl font-playfair font-semibold mb-3 text-center">
           Popular Blends
         </p>
-        <div class="grid grid-cols-3 gap-5 mt-7">
+        <div class="grid md:grid-cols-3 grid-cols-1 gap-5 mt-7 px-5">
           <div class="space-y-3">
             <img
               src="https://images.pexels.com/photos/350478/pexels-photo-350478.jpeg"
@@ -228,7 +233,7 @@
           Contact us
         </p>
         <div class="max-w-5xl mx-auto mt-10 bg-white shadow rounded-3xl">
-          <div class="grid grid-cols-2">
+          <div class="grid md:grid-cols-2 grid-cols-1">
             <div class="flex flex-col space-y-3 p-8">
               <label for="name">Your Name:</label>
               <input
@@ -266,21 +271,21 @@
             <div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.626368858033!2d77.7360307758255!3d8.726982793641817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b041109f4d5ea27%3A0xfa7f6fb7bc575e6e!2sRohini%20Tea%20stall!5e0!3m2!1sen!2sin!4v1765910705439!5m2!1sen!2sin"
-                width="600"
-                height="450"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                class="rounded-e-3xl"
+                class="rounded-e-3x w-full h-full"
               ></iframe>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="bg-dark textwhite py-20">
-      <div class="max-w-7xl mx-auto flex items-center justify-around">
+    <footer class="bg-dark textwhite pt-16 pb-4">
+      <div
+        class="max-w-7xl mx-auto flex md:flex-row flex-col md:items-center md:gap-0 gap-8 justify-around py-10 md:px-0 px-7"
+      >
         <div class="space-x-2">
           <span class="bg-white rounded p-2"
             ><i class="fa-solid fa-mug-saucer text-dark text-xl"></i
@@ -290,15 +295,51 @@
           >
         </div>
         <div class="text-light">
-          <p>Quick Links</p>
+          <p class="font-semibold text-white text-lg">Quick Links</p>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href=""></a></li>
+            <li><a href="" class="hover:text-white">Home</a></li>
+            <li><a href="" class="hover:text-white">About Us</a></li>
+            <li><a href="" class="hover:text-white">Products</a></li>
+            <li><a href="" class="hover:text-white"></a></li>
           </ul>
         </div>
+        <div class="text-light">
+          <p class="font-semibold text-white text-lg">Our Policies</p>
+          <ul>
+            <li>
+              <a href="" class="hover:text-white">Terms and Conditions</a>
+            </li>
+            <li><a href="" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="" class="hover:text-white">Shipping Policy</a></li>
+            <li><a href="" class="hover:text-white"></a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-white text-lg">Connect with Us</p>
+          <div class="space-x-3 mt-3">
+            <a href=""
+              ><i class="fa-brands fa-instagram text-light text-xl"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-facebook text-light text-xl"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-youtube text-light text-xl"></i
+            ></a>
+            <a href=""
+              ><i class="fa-brands fa-x-twitter text-light text-xl"></i
+            ></a>
+          </div>
+        </div>
       </div>
+      <p class="text-stone-300 text-center font-normal">
+        All rights reserved &copy; 2025. Developed By
+        <span class="cursor-pointer underline font-bold">
+          <a href="https://github.com/Santhosh-006" target="_blank"
+            >Santhosh G</a
+          ></span
+        >
+      </p>
     </footer>
   </body>
   <script
