@@ -10,6 +10,10 @@
   --color-light: #d7ccc8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes infinite-scroll {
   from {
     transform: translateX(0);
@@ -64,7 +68,7 @@
   animation-timeline: scroll();
   animation-delay: 0.2s;
   clip-path: inset(0);
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 30%;
 }
 
 @keyframes leftIn {
@@ -88,5 +92,5 @@
   animation: leftIn 1s ease-out forwards;
   animation-timeline: scroll();
   animation-delay: 0.2s;
-  animation-range: entry 0% cover 40%;
+  animation-range: entry 0% cover 30%;
 }

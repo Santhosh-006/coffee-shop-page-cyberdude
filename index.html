@@ -29,19 +29,19 @@
         <div class="md:block hidden">
           <ul class="flex gap-10 items-center space-x-3">
             <li class="hover:underline hover:underline-offset-4 cursor-pointer">
-              Home
+              <a href="#home">Home</a>
             </li>
             <li class="hover:underline hover:underline-offset-4 cursor-pointer">
-              About Us
+              <a href="#about">About Us</a>
             </li>
             <li class="hover:underline hover:underline-offset-4 cursor-pointer">
-              Products
+              <a href="#product">Products</a>
             </li>
           </ul>
         </div>
         <div>
           <a
-            href=""
+            href="#contact"
             class="bg-dark text-white font-medium rounded-4xl px-5 py-3 hover:bg-default"
             >Contact Us</a
           >
@@ -50,7 +50,7 @@
     </header>
     <main class="">
       <!-- Hero Section -->
-      <section class="min-h-screen">
+      <section class="min-h-screen" id="home">
         <div
           class="min-h-[85vh] flex flex-col-reverse md:flex-row md:mt-0 p-5 mt-16 items-center justify-center md:gap-6 gap-10 max-w-7xl mx-auto md:pt-24 2xl:pt-0"
         >
@@ -167,7 +167,7 @@
       </section>
 
       <!-- About Us -->
-      <section class="py-20 bg-stone-100">
+      <section class="py-20 bg-stone-100" id="about">
         <div class="max-w-7xl mx-auto">
           <div class="text-center">
             <p class="text-4xl font-playfair font-semibold mb-3">
@@ -247,17 +247,19 @@
           </div>
         </div>
       </section>
-      <section class="py-20 max-w-7xl mx-auto">
+      <section class="py-20 max-w-7xl mx-auto" id="product">
         <p class="text-4xl font-playfair font-semibold mb-3 text-center">
           Popular Blends
         </p>
         <div class="grid md:grid-cols-3 grid-cols-1 gap-5 mt-7 px-5">
           <div class="space-y-3 group">
-            <img
-              src="https://images.pexels.com/photos/350478/pexels-photo-350478.jpeg"
-              alt=""
-              class="h-80 w-full object-cover rounded-xl"
-            />
+            <div class="rounded-xl overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/350478/pexels-photo-350478.jpeg"
+                alt=""
+                class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
             <div class="flex justify-between">
               <div class="mx-2">
                 <p class="font-playfair text-xl text-dark font-semibold">
@@ -268,12 +270,14 @@
               <p class="font-bold text-2xl mx-2">&#8377;120.00</p>
             </div>
           </div>
-          <div class="space-y-3">
-            <img
-              src="https://imgmedia.lbb.in/media/2021/01/6013ac156cd15b71bdb76763_1611901973179.jpg"
-              alt=""
-              class="h-80 w-full object-cover rounded-xl"
-            />
+          <div class="space-y-3 group">
+            <div class="rounded-xl overflow-hidden">
+              <img
+                src="https://imgmedia.lbb.in/media/2021/01/6013ac156cd15b71bdb76763_1611901973179.jpg"
+                alt=""
+                class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
             <div class="flex justify-between">
               <div class="mx-2">
                 <p class="font-playfair text-xl text-dark font-semibold">
@@ -284,12 +288,14 @@
               <p class="font-bold text-2xl mx-2">&#8377;25.00</p>
             </div>
           </div>
-          <div class="space-y-3">
-            <img
-              src="https://images.pexels.com/photos/2648988/pexels-photo-2648988.jpeg"
-              alt=""
-              class="h-80 w-full object-cover rounded-xl"
-            />
+          <div class="space-y-3 group">
+            <div class="rounded-xl overflow-hidden">
+              <img
+                src="https://images.pexels.com/photos/2648988/pexels-photo-2648988.jpeg"
+                alt=""
+                class="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
             <div class="flex justify-between">
               <div class="mx-2">
                 <p class="font-playfair text-xl text-dark font-semibold">
@@ -302,7 +308,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-stone-100 py-20">
+      <section class="bg-stone-100 py-20" id="contact">
         <p class="text-4xl font-playfair font-semibold mb-3 text-center">
           Contact us
         </p>
@@ -329,7 +335,9 @@
                 class="border border-default/30 rounded-2xl px-4"
               ></textarea>
 
-              <button class="bg-default text-white p-3 rounded-2xl mt-3">
+              <button
+                class="bg-default hover:bg-dark text-white p-3 rounded-2xl mt-3"
+              >
                 Send Message
               </button>
               <div class="space-y-10">
