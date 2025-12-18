@@ -56,12 +56,14 @@
 .rightin {
   animation: rightIn 1s ease-out forwards;
   animation-delay: 0.2s;
+  /* clip-path: inset(0); */
 }
 
 .rightIn {
   animation: rightIn 1s ease-out forwards;
   animation-timeline: scroll();
   animation-delay: 0.2s;
+  clip-path: inset(0);
   animation-range: entry 0% cover 40%;
 }
 
